@@ -19,4 +19,17 @@ switch ($codigo){
 }
     echo $mensagem;
 
+
+/*Versão com Match*/
+echo match ($codigo){
+    200,300 => null,
+    400 => "Bad Request",
+    500 => "Erro interno do Servidor",
+    default => "Status não encontrado",
+};
+
+
+
+    
+
 ?>
